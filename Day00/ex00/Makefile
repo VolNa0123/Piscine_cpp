@@ -11,10 +11,10 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 all:	${NAME}
 
 %.o : %.cpp
-	g++ ${FLAGS} -c $< -o $@
+	c++ ${FLAGS} -c $< -o $@
 
 ${NAME}:	${OBJS}
-	g++ ${FLAGS} ${OBJS} -o ${NAME}
+	c++ ${FLAGS} ${OBJS} -o ${NAME}
 
 clean:
 	rm -f ${OBJS}

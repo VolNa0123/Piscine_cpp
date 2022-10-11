@@ -4,8 +4,7 @@ int main()
 {
 	int			index = 0;
 	Phonebook	book;
-
-	std::string		command;
+	std::string	command;
 	while (command.compare("EXIT") != 0)
 	{
 		std::cout << "Enter your command: ADD, SEARCH or EXIT" << std::endl;

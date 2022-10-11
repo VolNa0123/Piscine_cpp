@@ -20,7 +20,7 @@ class Contact
 		Contact();
 		~Contact();
 		void		displayContact(); // распечатывает выбранный контакт по индексу
-		void		getContact(int index); //выводит определенную сторку таблицы контактов
+		void		getContact(int index); //выводит определенную стpоку таблицы контактов
 		void		setContact(); // последовательно вызывает функцию запроса для все х полей и записывает их в экземпляр класса
 		std::string	getField(std::string field); // запрашивает и возвращает вызывываемое поле контакта
 };
