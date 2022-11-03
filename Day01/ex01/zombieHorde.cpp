@@ -1,11 +1,13 @@
 #include "Zombie.hpp"
 
-Zombie* zombieHorde( int N, std::string name ){
+Zombie* zombieHorde(int N, std::string name ){
 	if (N <= 0)
 		return (NULL);
 	Zombie *hordZombies = new (std::nothrow)Zombie[N];
-	if (!hordZombies)
+	if (!hordZombies){
 		std::cout << "Could not allocate memory" << std::endl;
+		return (NULL);
+	}
 	for (int i = 0; i < N; i++){
 		hordZombies[i].setName(name);
 		hordZombies[i].announce();

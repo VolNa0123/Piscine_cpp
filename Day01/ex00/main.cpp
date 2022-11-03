@@ -2,10 +2,10 @@
 
 int main(){
 	Zombie alisa = Zombie("Alisa");
-	alfred.announce();
+	alisa.announce();
 	Zombie *bob = newZombie("Bob");
-	kollin->announce();
-	randomChump("Wayne");
-	delete kollin;
+	bob->announce();
+	randomChump("Can");
+	delete bob;
 	return (0);
 }

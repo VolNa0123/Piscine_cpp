@@ -1,0 +1,35 @@
+NAME		=	Animal
+
+SRC			=	main.cpp \
+				Animal.cpp \
+				Dog.cpp \
+				Cat.cpp \
+				Brain.cpp 
+
+HEADER		=	Animal.hpp
+
+OBJS		=	${SRC:%.cpp=%.o}
+
+FLAGS		=	-Wall -Wextra -Werror -I. -std=c++98
+
+CC			=	c++
+
+RM			=	rm -f
+
+.PHONY:		all clean fclean re
+
+all: 		${NAME}
+
+${NAME}:	${OBJS}
+			${CC} ${FLAGS} ${OBJS} -o $@
+				
+%.o:		%.cpp ${HEADER} Makefile
+			${CC} ${FLAGS} -c $< -o $@
+				
+clean:
+			${RM} ${OBJS}
+
+fclean:		clean
+			${RM} ${NAME}
+
+re:			fclean all

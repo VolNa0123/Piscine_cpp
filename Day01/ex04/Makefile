@@ -1,9 +1,9 @@
-NAME		=	Account
+NAME		=	replace
 
-SRC			=	Account.cpp \
-				tests.cpp
+SRC			=	main.cpp \
+				replace.cpp
 
-HEADER		=	Account.hpp
+HEADER		=	replace.hpp
 
 OBJS		=	${SRC:%.cpp=%.o}
 

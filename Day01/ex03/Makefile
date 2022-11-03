@@ -1,9 +1,11 @@
-NAME		=	replace
+NAME		=	Weapon
 
 SRC			=	main.cpp \
-				replace.cpp
+				Weapon.cpp \
+				HumanA.cpp \
+				HumanB.cpp
 
-HEADER		=	replace.hpp
+HEADER		=	Weapon.hpp HumanA.hpp HumanB.hpp
 
 OBJS		=	${SRC:%.cpp=%.o}
 
